@@ -216,7 +216,7 @@ public final class tabela_002dclientes_jsp extends org.apache.jasper.runtime.Htt
           out.write("\r\n");
           out.write("\t\t\t\t\t");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${endereco.bairro}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("</br>\r\n");
+          out.write("</ br>\r\n");
           out.write("\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_forEach_1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

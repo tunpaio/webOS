@@ -30,7 +30,7 @@
 				</td>
 				<td>
 				<c:forEach items="${cliente.enderecos}" var="endereco">
-					${endereco.bairro}</br>
+					${endereco.bairro}</ br>
 				</c:forEach>
 				</td>
 				<td><button type="button" class="btn btn-warning btn-editar">Editar</button></td>

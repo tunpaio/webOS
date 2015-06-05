@@ -80,26 +80,31 @@ public final class listagem_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</style>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
+      out.write("\t<div class=\"container\">\r\n");
       out.write("\t");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "../menu.jsp", out, false);
+      out.write("\r\n");
+      out.write("\t\t");
       if (_jspx_meth_c_if_0(_jspx_page_context))
         return;
       out.write("\r\n");
-      out.write("\t\r\n");
-      out.write("\t");
+      out.write("\t\t\r\n");
+      out.write("\t\t");
       if (_jspx_meth_c_if_1(_jspx_page_context))
         return;
       out.write("\r\n");
-      out.write("\t\r\n");
-      out.write("\t\r\n");
-      out.write("\t<section class=\"container\" id=\"secao-enderecos\">\r\n");
-      out.write("\t\t");
+      out.write("\t\t\r\n");
+      out.write("\t\t\r\n");
+      out.write("\t\t<section id=\"secao-enderecos\">\r\n");
+      out.write("\t\t\t");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "tabela-enderecos.jsp", out, false);
       out.write("\r\n");
-      out.write("\t</section>\r\n");
-      out.write("\t\r\n");
-      out.write("\t");
+      out.write("\t\t</section>\r\n");
+      out.write("\t\t\r\n");
+      out.write("\t\t");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "modal-endereco.jsp", out, false);
       out.write("\r\n");
+      out.write("\t</div>\r\n");
       out.write("\t\r\n");
       out.write("\t<script type=\"text/javascript\" src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
@@ -158,12 +163,12 @@ public final class listagem_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_if_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\r\n");
-        out.write("\t\t<div class=\"container\">\r\n");
-        out.write("\t\t\t<div class=\"alert alert-danger\">");
+        out.write("\t\t\t<div>\r\n");
+        out.write("\t\t\t\t<div class=\"alert alert-danger\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mensagemErro}", java.lang.String.class, (PageContext)_jspx_page_context, null));
         out.write("</div>\r\n");
-        out.write("\t\t</div>\r\n");
-        out.write("\t");
+        out.write("\t\t\t</div>\r\n");
+        out.write("\t\t");
         int evalDoAfterBody = _jspx_th_c_if_0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -190,12 +195,12 @@ public final class listagem_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_if_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\r\n");
-        out.write("\t\t<div class=\"container\">\r\n");
-        out.write("\t\t\t<div class=\"alert alert-info\">");
+        out.write("\t\t\t<div>\r\n");
+        out.write("\t\t\t\t<div class=\"alert alert-info\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mensagemInfo}", java.lang.String.class, (PageContext)_jspx_page_context, null));
         out.write("</div>\r\n");
-        out.write("\t\t</div>\r\n");
-        out.write("\t");
+        out.write("\t\t\t</div>\r\n");
+        out.write("\t\t");
         int evalDoAfterBody = _jspx_th_c_if_1.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;

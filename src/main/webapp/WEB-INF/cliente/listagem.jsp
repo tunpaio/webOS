@@ -16,25 +16,27 @@
 </style>
 </head>
 <body>
+<div class="container">
+<jsp:include page="../menu.jsp"></jsp:include>
 	<c:if test="${not empty mensagemErro}">
-		<div class="container">
+		<div>
 			<div class="alert alert-danger">${mensagemErro}</div>
 		</div>
 	</c:if>
 	
 	<c:if test="${not empty mensagemInfo}">
-		<div class="container">
+		<div>
 			<div class="alert alert-info">${mensagemInfo}</div>
 		</div>
 	</c:if>
 	
 	
-	<section class="container" id="secao-clientes">
+	<section id="secao-clientes">
 		<jsp:include page="tabela-clientes.jsp"></jsp:include>
 	</section>
 	
 		<jsp:include page="modal-cliente.jsp"></jsp:include>
-	
+	</div>
 	<script type="text/javascript" src="${path}/static/js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="${path}/static/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="${path}/static/js/clientes.js"></script>
