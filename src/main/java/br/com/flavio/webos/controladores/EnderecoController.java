@@ -31,7 +31,7 @@ public class EnderecoController {
 	public String listarEnderecos(Model model){
 		Iterable<Endereco> enderecos = enderecoRepositorio.findAll();
 		
-		model.addAttribute("titulo", "Listagem de Endereços");
+		model.addAttribute("titulo", "Listagem de Enderecos");
 		model.addAttribute("enderecos", enderecos);
 		model.addAttribute("categorias", CategoriaDeEndereco.values());
 		return "endereco/listagem";

@@ -93,6 +93,9 @@ public final class modal_002dendereco_jsp extends org.apache.jasper.runtime.Http
       out.write("\t\t\t\t</select>\r\n");
       out.write("\t\t\t\t\r\n");
       out.write("\t\t\t\t<input id=\"id\" name=\"id\" type=\"hidden\">\r\n");
+      out.write("\t\t\t\t<input id=\"csrf\" name=\"_csrf\" type=\"hidden\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${_csrf.token}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\">\r\n");
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t\t<div class=\"modal-footer\">\r\n");
       out.write("\t\t\t\t<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Cancelar</button>\r\n");

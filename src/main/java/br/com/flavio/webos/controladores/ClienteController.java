@@ -42,9 +42,9 @@ public class ClienteController {
 	
 	@RequestMapping(method=RequestMethod.POST)
 	public String salvarCliente(
-			Model model,
 			@Valid @ModelAttribute Cliente cliente,
-			BindingResult bindingResult){
+			BindingResult bindingResult,
+			Model model){
 		
 		if (bindingResult.hasErrors() ){
 			throw new EnderecoInvalidoException();

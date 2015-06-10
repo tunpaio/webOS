@@ -40,7 +40,7 @@ var aplicarListeners = function(){
 		var clienteId = $(this).parents('tr').data('id');
 		
 		$.ajax({
-			url : "clientes/"+clienteId,
+			url : 'clientes/'+clienteId,
 			type: 'DELETE',
 			success: function(result) {
 				$('tr[data-id="'+clienteId+'"]').remove();

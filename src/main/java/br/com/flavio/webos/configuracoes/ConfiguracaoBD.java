@@ -28,8 +28,8 @@ public class ConfiguracaoBD {
 		ComboPooledDataSource dataSource = new ComboPooledDataSource();
 		dataSource.setDriverClass("com.mysql.jdbc.Driver");
 		dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/webos");
-		dataSource.setUser("admin");
-		dataSource.setPassword("admin");
+		dataSource.setUser("root");
+		dataSource.setPassword("root");
 		return dataSource;
 	}
 	

@@ -38,10 +38,12 @@ var aplicarListeners = function(){
 	
 	$('.btn-deletar').on('click', function(){
 		var clienteId = $(this).parents('tr').data('id');
+		var csrf = $('#csrf').val();
 		
 		$.ajax({
-			url : "clientes/"+clienteId,
+			url : 'clientes/'+clienteId,
 			type: 'DELETE',
+			headers: {'X-CSRF-TOKEN': csrf},
 			success: function(result) {
 				$('tr[data-id="'+clienteId+'"]').remove();
 				var clientes = parseInt( $('#quantidade-clientes').text() );				

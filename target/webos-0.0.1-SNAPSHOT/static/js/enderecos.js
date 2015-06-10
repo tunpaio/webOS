@@ -59,7 +59,7 @@ $(document).ready(function(){
 			var id = $(this).parents('tr').data('id');
 			
 			$.ajax({
-				url : "enderecos/"+id,
+				url : 'enderecos/'+id,
 				type: 'DELETE',
 				success: function(result) {
 					$('tr[data-id="'+id+'"]').remove();

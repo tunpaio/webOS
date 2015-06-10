@@ -57,10 +57,12 @@ $(document).ready(function(){
 		
 		$('.btn-deletar').on('click', function(){
 			var id = $(this).parents('tr').data('id');
+			var csrf = $('#csrf').val();
 			
 			$.ajax({
-				url : "enderecos/"+id,
+				url : 'enderecos/'+id,
 				type: 'DELETE',
+				headers: {'X-CSRF-TOKEN': csrf},
 				success: function(result) {
 					$('tr[data-id="'+id+'"]').remove();
 					var enderecos = parseInt( $('#quantidade-enderecos').text() );					
